@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resumo: Capítulo 2 - HTML</title>
+</head>
+<body>
+
+    <h1>Resumo: Capítulo 2 - Estruturação de Páginas Web com HTML</h1>
+
+    <h2>1. Introdução e Fundamentos</h2>
+    <ul>
+        <li><b>Papel do HTML:</b> Utilizado para definir a estrutura e a semântica dos componentes de uma página web.</li>
+        <li><b>Versões:</b>
+	    <ul>
+		<li>HTML: A primeira versão (sem número de versão) foi publicada em 1992</li> 
+		<li>HTML 4.0: Lançado em 1997 e importante porque o CSS se tornou disponível nesta versão.</li> 
+		<li>XHTML 1.0: É a 'junção' entre XML e HTML, e possui regras mais restritas</li>
+		<li>HTML5: Esta versão foi lançada em 2014 e é escrito com o número da versão logo após “HTML”</li>
+	    </ul>
+	</li>
+        <li><b>Elementos e Atributos:</b> 
+            <ul>
+                <li>Elementos: Tags de abertura e fechamento que delimitam conteúdo e o corpo da página.</li>
+                <li>Atributos: Para adicionar configurações para os elementos.</li>
+            </ul>
+        </li>
+        <li><b>Documentos/arquivos HTML:</b> Devem ter a tag <code>&lt;!DOCTYPE html&gt;</code>, para informar ao navegador qual versão html está sendo usada.</li>
+    </ul>
+
+    <br/>
+
+    <h2>2. Formatação de Texto e Estruturas Básicas</h2>
+    <ul>
+  	<!------ <code>&It;   &gt; essa é uma tag semântica que diz que oq tem dentro dela é código ----->
+
+        <li><b>Títulos e Parágrafos:</b> Uso de <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> para hierarquia dos títulos e <code>&lt;p&gt;</code> para blocos de texto, parágrafos.</li>
+        <li><b>Destaques:</b> <b>Negrito</b> (usando <code>&lt;strong&gt;</code> ou <code>&lt;b&gt;</code>) e <em>Itálico</em> (usando <code>&lt;em&gt;</code> ou <code>&lt;i&gt;</code>).</li>
+        <li><b>Outros:</b> <sup>sobrescrito</sup>, <sub>subscrito</sub> e quebra de linha manual com <code>&lt;br /&gt;</code>.</li>
+        <li><b>Citações:</b> <code>&lt;blockquote&gt;</code> para blocos longos e <code>&lt;abbr&gt;</code> para abreviações.</li>
+    </ul>
+
+    <br />
+
+    <h2>3. Listas, Links e Mídia</h2>
+    <dl>
+        <dt><b>Listas Ordenadas: </b></dt>
+    </dl>
+    	<ol>
+	   		<li>Entradas numeradas sequencialmente.</li>
+	   		<li>Tag (&lt;ol&gt;) para criar a lista ordenada.</li>
+	   		<li>Tag (&lt;li&gt;) para criar os itens da lista.</li>
+    	</ol>
+     <dl>
+        <dt><b>Listas Não Ordenadas: </b></dt>
+     </dl>
+		<ul>
+        	<li>Entradas com marcadores (bullets).</li>
+			<li>Tag (&lt;ul&gt;) para criar a lista não ordenada.</li>
+	   		<li>Tag (&lt;li&gt;) para criar os itens da lista.</li>
+		</ul>
+   <dl>
+	<dt><b>Listas de Definição</b></dt>
+	<dd>Tag (&lt;dl&gt;) para criar a lista de definição.</dd>
+	<dd>Na lista de definição para criar os itens da lista, no lugar do elemento (&lt;li&gt;) usa-se os pares de elementos (&lt;dt&gt;) e (&lt;/dt&gt;), (&lt;dd&gt;) e (&lt;/dd&gt;).</dd>
+</dl>
+   <dl>
+        <dt><b>Links </b></dt>
+        <dd>Navegação via URLs externas, caminhos relativos ou âncoras internas.</dd>
+	<dd>Tag (&lt;a&gt;) com o atributo (&lt;href&gt;) para apontar para outra página.</dd>
+	<dd>Existem vários tipos de links: <b>Links externos</b> levam você a outros sites, <b>links relativos</b> pulam para outra página da web no mesmo site, e <b>links internos</b> vão para outro local dentro da mesma página da web.</dd>
+        
+        <dt><b>Imagens</b></dt>
+            <dd>Tag (&lt;img&gt;) para inserir imagens.</dd>
+            <dd>Usa o atributo src para especificar a URL onde a imagem está.</dd>
+            <dd>Usa o atributo alt para colocar um texto alternativo para a imagem caso ela for exibida no navegador.</dd>
+            <dd>Os elementos (&lt;figure&gt;) e (&lt;figcaption&gt;) são para adicionar uma legenda a uma imagem.</dd>
+   </dl>
+
+    <br />
+
+    <h2>4. Tabelas e Formulários</h2>
+   <h3>Tabelas</h3>
+    <table>
+        <tr>
+            <th>Elemento</th>
+            <th>Função</th>
+        </tr>
+        <tr>
+            <td>&lt;table&gt;</td>
+            <td>Definir a estrutura de uma tabela em HTML</td>
+        </tr>
+	<tr>
+		<td>&lt;td&gt;,&lt;tr&gt;</td>
+		<td>Inserir novas linhas na tabela com o elemento &lt;tr&gt; e novos dados pelo o elemento &lt;td&gt;</td>
+	</tr>
+	<tr>
+		<td>&lt;thead&gt;,&lt;tbody&gt;,&lt;tfoot&gt;</td>
+		<td> Os elementos especiais &lt;thead&gt; (cabeçalho da tabela), &lt;tbody&gt; (corpo da tabela) e &lt;tfoot&gt; (rodapé da tabela) são usados para marcar a área da tabela.</td>
+	</tr>
+	</table>
+        
+	<dl>
+	<b><dt>Formulários</dt></b>
+            <dd>Tag &lt;form&gt; para definir o formulário.</dd>
+ 	     <dd>Elementos &lt;fieldset&gt; opcionais permitem agrupar áreas individuais em um formulário.</dd>
+	    <dd>Definir campos de texto, campos de senha, botões de rádio e caixas de seleção usando o &lt;input&gt;.</dd>
+	     <dd>O atributo &lt;type&gt; define o tipo do campo de entrada: para campos de texto, é text; para campos de senha, password; para botões de rádio, radio; e para caixas de seleção, checkbox, endereços de e-mail, email.</dd>
+	<dd>Definir listas suspensas usando o &lt;select&gt;, definir as opções individuais dentro de uma lista suspensa usando &lt;option&gt; e definir áreas de texto usando &lt;textarea&gt;.</dd>
+	<dd>Adicionar um rótulo a um campo de entrada, usar o elemento &lt;label&gt;.</dd>
+	</dl>
+
+    <br />
+
+    <h2>5. Comportamento de Exibição</h2>
+    <ul>
+        <li><strong>Bloco (Block):</strong> Ocupam toda a largura e iniciam nova linha (ex: <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>).</li>
+        <li><strong>Em linha (Inline):</strong> Mantêm-se no fluxo do texto (ex: <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code>).</li>
+    </ul>
+
+</body>
+</html>
